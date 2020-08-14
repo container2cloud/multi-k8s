@@ -3,7 +3,7 @@ kind: Certificate
 metadata:
   name: fib-wegoto-cloud-tls
 spec:
-  secretName: fib-wegoto-cloud
+  secretName: wegoto-cloud
   isserRef:
     name: letsencrypt-prod
     kind: ClusterIssuer
