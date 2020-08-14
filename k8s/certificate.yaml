@@ -10,11 +10,11 @@ spec:
   commonName: wegoto.cloud
   dnsName:
     - wegoto.cloud
-    - fib.wegoto.cloud
+    - www.wegoto.cloud
   acme:
     config:
       - http01:
           ingressClass: nginx
         domains:
           - wegoto.cloud
-          - fib.wegoto.cloud
+          - www.wegoto.cloud
