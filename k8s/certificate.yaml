@@ -5,14 +5,16 @@ metadata:
 spec:
   secretName: fib-wegoto-cloud
   isserRef:
-    kind: ClusterIssuer
     name: letsencrypt-prod
-  commonName: fib.wegoto.cloud
+    kind: ClusterIssuer
+  commonName: wegoto.cloud
   dnsName:
+    - wegoto.cloud
     - fib.wegoto.cloud
   acme:
     config:
       - http01:
           ingressClass: nginx
         domains:
+          - wegoto.cloud
           - fib.wegoto.cloud
